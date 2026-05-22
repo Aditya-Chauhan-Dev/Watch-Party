@@ -4,7 +4,7 @@ A real-time YouTube Watch Party platform where multiple users can watch videos t
 
 ## 🚀 Live Demo
 
-🔗 **Frontend:** https://your-frontend-url.com
+🔗 **Frontend:** https://watch-party-frontend-5x08.onrender.com
 
 
 > Replace the above URLs with your deployed frontend and backend links.

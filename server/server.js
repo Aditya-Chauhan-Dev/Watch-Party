@@ -9,6 +9,7 @@ const { Server } = require("socket.io");
 connectDB();
 
 const server = http.createServer(app);
+console.log("CLIENT_URL =", process.env.CLIENT_URL);
 
 const io = new Server(server, {
   cors: {
@@ -16,7 +17,6 @@ const io = new Server(server, {
     credentials: true,
   },
 });
-console.log("CLIENT_URL =", process.env.CLIENT_URL);
 
 socketHandler(io);
 
