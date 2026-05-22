@@ -16,6 +16,7 @@ const io = new Server(server, {
     credentials: true,
   },
 });
+console.log("CLIENT_URL =", process.env.CLIENT_URL);
 
 socketHandler(io);
 
