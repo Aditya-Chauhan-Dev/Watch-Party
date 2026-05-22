@@ -27,7 +27,7 @@ const roomSchema = new mongoose.Schema(
 
     videoId: {
       type: String,
-      default: "M7lc1UVf-VE",
+      default: "xeXV1KoX034",
     },
 
     currentTime: {
