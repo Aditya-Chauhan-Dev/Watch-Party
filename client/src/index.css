@@ -79,7 +79,7 @@
     width: 890px;
 }
 
-@media (max-width:1078px){
+@media (max-width:768px){
     .youtube{
         height: 200px;
         width: 360px;
@@ -87,5 +87,12 @@
     .room{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1078px){
+    .youtube{
+        height: 400px;
+        width: 850px ;
     }
 }
