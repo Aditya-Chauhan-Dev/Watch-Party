@@ -27,8 +27,8 @@ A real-time Watch Party application frontend built with React and Socket.IO that
 ## 🚀 Setup
 
 ```bash
-git clone <repository-url>
-cd watch-party-frontend
+git clone https://github.com/Aditya-Chauhan-Dev/Watch-Party.git
+cd watch-party-client
 npm install
 npm run dev
 ```
