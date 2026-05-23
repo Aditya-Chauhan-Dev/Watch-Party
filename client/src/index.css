@@ -79,7 +79,7 @@
     width: 890px;
 }
 
-@media (max-width:600px){
+@media (max-width:900px){
     .youtube{
         height: 200px;
         width: 360px;
