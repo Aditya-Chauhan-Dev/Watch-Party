@@ -248,7 +248,7 @@ export default function Room() {
 
         {/* Video Section */}
         <div className="flex-1 w-full">
-          <div className="w-full max-w-[900px] mx-auto aspect-video">
+          <div className="yt_frame w-full max-w-[900px] mx-auto aspect-video">
             <YouTube
               className="youtube"
               key={videoId}

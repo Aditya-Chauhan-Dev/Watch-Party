@@ -93,6 +93,11 @@
 @media (min-width: 768px) and (max-width: 1078px){
     .youtube{
         height: 400px;
-        width: 850px ;
+        width: 650px ;
+    }
+    .yt_frame{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
