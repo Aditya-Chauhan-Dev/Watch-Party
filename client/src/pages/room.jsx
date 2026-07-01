@@ -218,6 +218,7 @@ export default function Room() {
                 {user.username} - {user.role}
                 {myRole === "host" && user.role !== "host" && (
                   <button
+                    className="cursor-pointer"
                     onClick={() =>
                       socket.emit("remove_participant", {
                         roomId: id,
@@ -230,6 +231,7 @@ export default function Room() {
                 )}
                 {myRole === "host" && user.role === "participant" && (
                   <button
+                    className="cursor-pointer"
                     onClick={() =>
                       socket.emit("assign_role", {
                         roomId: id,
@@ -270,6 +272,7 @@ export default function Room() {
           <div className="controls flex flex-wrap items-center justify-center gap-3 pt-3 pb-3">
             <button
               disabled={myRole === "participant"}
+              className="cursor-pointer"
               onClick={() =>
                 socket.emit("play", {
                   roomId: id,
@@ -281,6 +284,7 @@ export default function Room() {
 
             <button
               disabled={myRole === "participant"}
+              className="cursor-pointer"
               onClick={() =>
                 socket.emit("pause", {
                   roomId: id,
@@ -291,6 +295,7 @@ export default function Room() {
             </button>
 
             <button
+              className="cursor-pointer"
               disabled={myRole === "participant"}
               onClick={() =>
                 socket.emit("seek", {
@@ -311,7 +316,7 @@ export default function Room() {
               />
 
               <button
-                className="border-l-2 px-3"
+                className="border-l-2 px-3 cursor-pointer"
                 disabled={myRole === "participant"}
                 onClick={() => {
                   if (!newVideoId.trim()) {
